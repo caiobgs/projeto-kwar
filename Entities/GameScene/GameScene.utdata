@@ -1,0 +1,466 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "e97a4664afb1483c8f38c4c632be4d08",
+    "Name": "GameScene",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "23d86c177a5241f9900934477b299176", "Name": "BackgroundResponsive" },
+        { "$TypeId": 9, "Id": "4e9c2bc8a0444008b81464979a4003f2", "Name": "BackgroundImage" },
+        { "$TypeId": 9, "Id": "eb673e23ae994e47a3f69f4f64252ef7", "Name": "BackgroundParalax" },
+        { "$TypeId": 9, "Id": "55148f2feee04dec836794d5f1b16358", "Name": "ParalaxBG2" },
+        { "$TypeId": 9, "Id": "b998237eda7f44459218ade77a6c3a5e", "Name": "ParalaxBG1" },
+        { "$TypeId": 9, "Id": "65e92f7822c94baaa69a5da0821eb74d", "Name": "CameraCanvas" },
+        { "$TypeId": 9, "Id": "f1e79ead8b0d47f69e81054a4be1f078", "Name": "Player" },
+        { "$TypeId": 9, "Id": "ec730627d9584ebbbbda879b8fdd05d6", "Name": "EnemySpawner" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "23d86c177a5241f9900934477b299176",
+    "Name": "BackgroundResponsive",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "z": 100
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.7604563,
+                    "y": 0.7604563,
+                    "z": 0.7604563
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "757a06c4ae1ec5fccccd28eb89a6dc54", "Name": "UICanvas" },
+        "Properties": {
+            "camera": { "$TypeId": 9, "Id": "65e92f7822c94baaa69a5da0821eb74d", "Name": "CameraCanvas" },
+            "uiScaleMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "0accc10de1131b44701da611a92a0f65", "Name": "UIScaleMode" },
+                "Id": "9d7c7416dafcd189680613e618163ec5",
+                "Name": "ScaleWithScreenSize",
+                "Value": 1
+            },
+            "referenceResolution": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 1920,
+                    "y": 1080
+                }
+            },
+            "matchWidthOrHeight": 1
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": -2
+        }
+    }, {
+        "Type": { "Id": "35adb8050e204a3fadd7e35f15469a34", "Name": "ComponenteTeste" },
+        "Properties": {
+            "BackgrundImage": { "$TypeId": 9, "Id": "4e9c2bc8a0444008b81464979a4003f2", "Name": "BackgroundImage" }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4e9c2bc8a0444008b81464979a4003f2",
+    "Name": "BackgroundImage",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "23d86c177a5241f9900934477b299176", "Name": "Background" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "b2e9a53ece3e84a4ab8a2daf9dbdeeaa", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 640,
+                    "y": 480
+                }
+            },
+            "drawMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "a7ae2ef1f120627af99607cbecca330e", "Name": "DrawMode" },
+                "Id": "0334e5a91225cf998b678224025cf40c",
+                "Name": "ContinuousTiling",
+                "Value": 0
+            }
+        }
+    }, {
+        "Type": { "Id": "98e68b0ff8f4415fb64e6764a87c1d46", "Name": "ScrollingBackground" },
+        "Properties": {
+            "speed": 10,
+            "threshold": -11,
+            "distance": 20
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "eb673e23ae994e47a3f69f4f64252ef7",
+    "Name": "BackgroundParalax",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": -1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "55148f2feee04dec836794d5f1b16358",
+    "Name": "ParalaxBG2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "eb673e23ae994e47a3f69f4f64252ef7", "Name": "BackgroundParalax" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 15,
+                    "y": 693.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "98e68b0ff8f4415fb64e6764a87c1d46", "Name": "ScrollingBackground" },
+        "Properties": {
+            "speed": 80,
+            "threshold": -550,
+            "distance": 1100
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "b2e9a53ece3e84a4ab8a2daf9dbdeeaa", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            },
+            "blending": {
+                "$TypeId": 8,
+                "Type": { "Id": "78fe1548d31b94b79668981ae1d3279d", "Name": "BlendOp" },
+                "Id": "9daf3d8964fa151072669dd46dec27ea",
+                "Name": "Add",
+                "Value": 1
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 889.0199,
+                    "y": 693.4884
+                }
+            },
+            "drawMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "a7ae2ef1f120627af99607cbecca330e", "Name": "DrawMode" },
+                "Id": "0334e5a91225cf998b678224025cf40c",
+                "Name": "ContinuousTiling",
+                "Value": 0
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "b998237eda7f44459218ade77a6c3a5e",
+    "Name": "ParalaxBG1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "eb673e23ae994e47a3f69f4f64252ef7", "Name": "BackgroundParalax" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 15,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "98e68b0ff8f4415fb64e6764a87c1d46", "Name": "ScrollingBackground" },
+        "Properties": {
+            "speed": 80,
+            "threshold": -550,
+            "distance": 1100
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "b2e9a53ece3e84a4ab8a2daf9dbdeeaa", "FileId": 21300000, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            },
+            "blending": {
+                "$TypeId": 8,
+                "Type": { "Id": "78fe1548d31b94b79668981ae1d3279d", "Name": "BlendOp" },
+                "Id": "9daf3d8964fa151072669dd46dec27ea",
+                "Name": "Add",
+                "Value": 1
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 889.0199,
+                    "y": 693.4884
+                }
+            },
+            "drawMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "a7ae2ef1f120627af99607cbecca330e", "Name": "DrawMode" },
+                "Id": "0334e5a91225cf998b678224025cf40c",
+                "Name": "ContinuousTiling",
+                "Value": 0
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "65e92f7822c94baaa69a5da0821eb74d",
+    "Name": "CameraCanvas",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "halfVerticalSize": 200
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "f1e79ead8b0d47f69e81054a4be1f078",
+    "Name": "Player",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "23433a877f75d754c9f1bfb18e7493a4", "FileId": 21300004, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": 5
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+        "Properties": {
+            "rotation": {
+                "Type": { "Id": "dc7e11e5d517ed01fd5d084a6c9fd64d", "Name": "Quaternion" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1,
+                    "w": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "f1e79ead8b0d47f69e81054a4be1f078", "Name": "Player" },
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "23433a877f75d754c9f1bfb18e7493a4", "FileId": 21300004, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "23433a877f75d754c9f1bfb18e7493a4", "FileId": 21300006, "Type": 3 }
+                ]
+            },
+            "frameRate": 12
+        }
+    }, {
+        "Type": { "Id": "bc4fd20a740a4312ae89c6d3cc28c5df", "Name": "MoveSpeed" },
+        "Properties": {
+            "speed": 80
+        }
+    }, {
+        "Type": { "Id": "35df798722e6438592a0d2d5c14c0d0e", "Name": "MoveWithInput" }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -9,
+                    "y": -10,
+                    "width": 18,
+                    "height": 18
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f09ab5d648744cca971aae793d1634f1", "Name": "PlayerTag" }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 20,
+                    "y": 20
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "00cadf6efe1d47d29c52cda6cbf763f2", "Name": "Boundaries" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "ec730627d9584ebbbbda879b8fdd05d6",
+    "Name": "EnemySpawner",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "d755a11baf58429e908549208ed56b78", "Name": "Spawner" },
+        "Properties": {
+            "time": 1.5,
+            "delay": 2,
+            "isPaused": false,
+            "spawnedGroup": "game.EnemyGroup",
+            "SpawnerDecrement": 0.02
+        }
+    }]
+}]

@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "35adb8050e204a3fadd7e35f15469a34",
+    "Name": "ComponenteTeste",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "79ae15ec2e7246418fbd859b6615cdbb",
+        "Name": "BackgrundImage",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "35adb8050e204a3fadd7e35f15469a34", "Name": "ComponenteTeste" }
+    }
+}]
